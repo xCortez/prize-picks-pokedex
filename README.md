@@ -1,9 +1,10 @@
 # PrizePicks Pokedex
 
 # Technologies used in this project:
-* React
-* Typescript
-* Styled-components
+* [React](https://react.dev/)
+* [Typescript](https://www.typescriptlang.org/)
+* [Styled-components](https://github.com/styled-components/styled-components)
+* [Axios](https://github.com/axios/axios)
 
 # Setup
 

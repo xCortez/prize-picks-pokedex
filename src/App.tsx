@@ -1,20 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import CenteredPage from './components/surfaces/centered-page';
-import TextInput from './components/inputs/text-input';
-import Button from './components/inputs/button';
-import { Pokedex } from './components/inputs/text-input/index.css';
-import pokedexIcon from './assets/pokedex-icon.png'
+import PokemonSearchForm from './components/forms/pokemon-search';
 
 function App() {
   return (
     <CenteredPage>
-      <TextInput>
-        <>
-          <Button>
-          <Pokedex src={pokedexIcon}/>Search</Button>
-        </>
-      </TextInput>
+      <PokemonSearchForm />
     </CenteredPage>
   );
 }
