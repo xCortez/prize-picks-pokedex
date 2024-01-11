@@ -3,6 +3,7 @@
 # Technologies used in this project:
 * React
 * Typescript
+* Styled-components
 
 # Setup
 

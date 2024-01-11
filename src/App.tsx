@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import CenteredPage from './components/surfaces/centered-page';
+import TextInput from './components/inputs/text-input';
+import Button from './components/inputs/button';
+import { Pokedex } from './components/inputs/text-input/index.css';
+import pokedexIcon from './assets/pokedex-icon.png'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CenteredPage>
+      <TextInput>
+        <>
+          <Button>
+          <Pokedex src={pokedexIcon}/>Search</Button>
+        </>
+      </TextInput>
+    </CenteredPage>
   );
 }
 
