@@ -22,7 +22,7 @@ function TextInput({ children, onInputChange }: TextInputInterface) {
     }, 1000)
 
     return () => clearTimeout(delayedTimeoutId);
-  }, [value, 1000])
+  }, [value, onInputChange])
 
   return (
     <InputWrapper><Input onChange={onChange}/>{children}</InputWrapper>

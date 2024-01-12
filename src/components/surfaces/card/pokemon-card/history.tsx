@@ -2,7 +2,7 @@ import React from 'react';
 
 import Avatar from '../../../data-display/avatar';
 import Card from '..';
-import { AvatarAndContent, HistoryLink, ContentColumn, Identifier, Stats } from './index.css';
+import { AvatarAndContent, HistoryLink, ContentColumn, Identifier } from './index.css';
 import { HistoryEntry } from '../../../../redux/history/history-slice/schema';
 import { format } from 'date-fns';
 import titlizeString from '../../../../utils/titleize-string';

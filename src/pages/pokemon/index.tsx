@@ -10,7 +10,7 @@ export default function Pokemon() {
   const { id = '' } = useParams();
   const { data, isLoading, error } = usePokemonFetch({ queryStr: id });
   const { data: speciesData } = useSpeciesFetcher({ queryStr: id });
-  const speciesEvolvesFromUrlParts = speciesData && speciesData.evolves_from_species?.url.split('/') || [];
+  const speciesEvolvesFromUrlParts = speciesData ? speciesData.evolves_from_species?.url.split('/') : [];
 
   return (
     <PageWrapper $url={data?.sprites.back_default}>

@@ -41,7 +41,7 @@ export default function usePokemonFetch({ queryStr }: UsePokemonFetch) {
     };
 
     dispatch(addSearch(historyEntry));
-  }, [data]);
+  }, [data, dispatch, error]);
 
   return { ...swrProps, data, error: sanitizedError };
 }

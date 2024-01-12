@@ -1,6 +1,6 @@
 import useSWR from "swr";
 import pokemonFetcher from "../pokemon-fetcher";
-import { Pokemon, PokemonSpecies } from "../schema";
+import { PokemonSpecies } from "../schema";
 
 export default function useSpeciesFetcher({ queryStr }: { queryStr?: string }) {
   const stringifyAndLowercase = (val: string | number) => String(val).toLowerCase();
