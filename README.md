@@ -10,7 +10,7 @@
 
 # Setup
 
-1. Clone this repository `git clone git@github.com:xCortez/prize-picks-pokedex.git`
+1. Clone this repository `git clone https://github.com/xCortez/prize-picks-pokedex.git`
 2. Install the dependencies of the project: `npm i`
 3. Spin up the app `npm start`
 4. visit `http://localhost:3000`
