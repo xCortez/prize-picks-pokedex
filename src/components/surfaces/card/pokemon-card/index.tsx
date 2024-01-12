@@ -4,9 +4,10 @@ import Avatar from '../../../data-display/avatar';
 import Card from '..';
 import { AvatarAndContent, CardWrapper, Footer, ContentColumn, Identifier, Stat, Stats } from './index.css';
 import { Pokemon } from '../../../../api/pokemon/schema';
+import titlizeString from '../../../../utils/titleize-string';
 
 function IdentifierTreatment({ label, value }: { label: string, value: React.ReactNode }) {
-  const titleizedLabel = label[0].toUpperCase() + label.substring(1);
+  const titleizedLabel = titlizeString(label);
 
   return <Identifier><strong>{titleizedLabel}</strong>: {value}</Identifier>
 }

@@ -5,9 +5,10 @@ import Card from '..';
 import { AvatarAndContent, HistoryLink, ContentColumn, Identifier, Stats } from './index.css';
 import { HistoryEntry } from '../../../../redux/history/history-slice/schema';
 import { format } from 'date-fns';
+import titlizeString from '../../../../utils/titleize-string';
 
 function IdentifierTreatment({ label, value }: { label: string, value: React.ReactNode }) {
-  const titleizedLabel = label[0].toUpperCase() + label.substring(1);
+  const titleizedLabel = titlizeString(label);
 
   return <Identifier><strong>{titleizedLabel}</strong>: {value}</Identifier>
 }

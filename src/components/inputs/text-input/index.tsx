@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { InputWrapper, Input } from "./index.css";
 
 interface TextInputInterface {
-  children?: React.ReactNode 
+  children?: React.ReactNode;
   onInputChange: (val: string) => void;
 };
 

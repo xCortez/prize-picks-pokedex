@@ -255,7 +255,10 @@ export type Pokemon = {
   name: string;
   order: number;
   past_types: PokemonTypePast[];
-  species: PokemonSpecies[];
+  species: {
+    name: string;
+    url: string;
+  };
   sprites: PokemonSprites;
   stats: PokemonStat[];
   types: PokemonType[];
@@ -321,11 +324,27 @@ export type PokemonColor = {
   pokemon_species: PokemonSpecies[];
 }
 
+export type ChainLink = {
+  species: PokemonSpecies;
+  evolves_to: ChainLink[];
+}
+
+export type  EvolutionChain = {
+  id: number;
+  chain: ChainLink;
+}
+
 export type PokemonSpecies = {
   base_happiness: number;
   capture_rate: number;
   color: PokemonColor;
-  evolves_from_species: PokemonSpecies;
+  evolves_from_species: {
+    name:string
+    url: string;
+  };
+  evolution_chain: {
+    url: string;
+  };
   form_descriptions: Description[];
   forms_switchable: boolean;
   gender_rate: number;

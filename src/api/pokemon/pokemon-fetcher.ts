@@ -1,9 +1,9 @@
 import axios from "axios";
 
-const buildFetchPath = (characterName: string ) => `https://pokeapi.co/api/v2/pokemon/${characterName}`
+const buildFetchPath = (path: string ) => `https://pokeapi.co/api/v2/${path}`
 
-export default function pokemonFetcher(characterName: string) {
-  const fetchPath = buildFetchPath(characterName);
+export default function pokemonFetcher(path: string) {
+  const fetchPath = buildFetchPath(path);
 
   return axios.get(fetchPath).then((response) => response.data)
 }

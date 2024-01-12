@@ -5,6 +5,7 @@ const StyledNavbar = styled.nav`
   border-bottom: 1px solid ${palette.light};
   box-shadow: 3px 5px 5px ${palette.light};
   display: flex;
+  align-items: center;
   padding: 1rem;
 
   & a {
