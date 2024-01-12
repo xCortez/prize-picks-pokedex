@@ -349,7 +349,7 @@ export type PokemonSpecies = {
   forms_switchable: boolean;
   gender_rate: number;
   generation: Generation;
-  habitat: PokemonHabitat;
+  habitat?: PokemonHabitat;
   has_gender_differences: boolean;
   hatch_counter: number;
   id: number;

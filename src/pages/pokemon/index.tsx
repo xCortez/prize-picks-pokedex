@@ -24,7 +24,7 @@ export default function Pokemon() {
           <h4>Species Data</h4>
           <SpeciesData>
             <span>Aliases: {speciesData.names.map(({ name }) => name).join(', ')}</span>
-            <span>Habitat: {speciesData.habitat.name}</span>
+            {speciesData.habitat && <span>Habitat: {speciesData.habitat.name}</span> }
             {speciesData.evolves_from_species && (
               <span>
                 Evolves from:
