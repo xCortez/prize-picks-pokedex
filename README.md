@@ -55,6 +55,8 @@ search on the home page, and a second entry for when you click through to the de
 * The pokemon details pages only include `evolves_from` relationships, so you can visit previous evolutions from the details page
 but not the `evolves_to` relationship
 
+* Path aliasing would be nice for this project to avoid the `../../../..` paths. it can be done with [CRACO](https://www.npmjs.com/package/@craco/craco) + ts config path configurations
+
 * Also noticed some deprecation warnings, ideally I would go and fix these warnings to ensure the projcect is in the best shape possible, but I was running out of time
   So instead I'm leaving this note here stating that I would infact like to fix those warnings
 
