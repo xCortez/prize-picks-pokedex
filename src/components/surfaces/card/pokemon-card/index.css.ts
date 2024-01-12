@@ -7,9 +7,18 @@ const AvatarAndContent = styled.div`
   display: flex;
 `;
 
-const CardWrapper = styled.div`
+const CardWrapper = styled(Link)`
+  color: ${palette.dark};
+  display: block;
   max-width: 300px;
   padding: 0 2rem;
+  text-decoration: none;
+
+  &:focus,
+  &:visited,
+  &:link {
+    text-decoration: none;
+  }
 `
 
 const ContentColumn = styled.span`
@@ -43,7 +52,7 @@ const Stats = styled.span`
 `;
 
 const HistoryLink = styled(Link)`
-  color: ${palette.primary}
+  color: ${palette.dark};
   text-decoration: none;
 
   &:hover {

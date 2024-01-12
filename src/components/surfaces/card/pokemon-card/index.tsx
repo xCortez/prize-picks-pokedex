@@ -18,7 +18,7 @@ export default function PokemonCard({ pokemonData }: { pokemonData:  Pokemon }) 
 
   return (
     <Card>
-      <CardWrapper>
+      <CardWrapper to={`/pokemon/${pokemonData.id}`}>
         <AvatarAndContent>
           <Avatar imageSrc={pokemonData.sprites.front_default} />
           <ContentColumn>
