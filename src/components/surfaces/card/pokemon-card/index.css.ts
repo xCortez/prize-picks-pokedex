@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import palette from "../../../../theme/palette";
+import { Link } from 'react-router-dom';
 
 const AvatarAndContent = styled.div`
   align-items: center;
@@ -41,13 +42,29 @@ const Stats = styled.span`
   padding: 1rem;
 `;
 
+const HistoryLink = styled(Link)`
+  color: ${palette.primary}
+  text-decoration: none;
+
+  &:hover {
+    background-color: ${palette.light};
+    box-shadow: 2px 5px 5px ${palette.gold};
+  }
+
+  &:focus,
+  &:visited,
+  &:link {
+    text-decoration: none;
+  }
+`;
 
 export {
   AvatarAndContent,
   CardWrapper,
-  Stat,
-  Footer,
   ContentColumn,
+  Footer,
+  HistoryLink,
   Identifier,
+  Stat,
   Stats
 };

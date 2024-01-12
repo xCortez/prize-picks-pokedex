@@ -6,6 +6,7 @@
 * [Styled-components](https://github.com/styled-components/styled-components)
 * [Axios](https://github.com/axios/axios)
 * [Redux-Toolkit](https://redux-toolkit.js.org)
+* [Date-fns](https://date-fns.org/)
 
 # Setup
 

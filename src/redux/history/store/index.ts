@@ -1,4 +1,5 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
+import { useSelector, TypedUseSelectorHook } from 'react-redux';
 import historyReducer from '../history-slice';
 import { RootState } from './schema';
 
@@ -40,5 +41,8 @@ const store = configureStore({
 
 // Subscribe to store updates and save the state to localStorage
 store.subscribe(() => saveState(store.getState()));
+
+ // Export a hook that can be reused to resolve types regarding state
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
 
 export default store;
