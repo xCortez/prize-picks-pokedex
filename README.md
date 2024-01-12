@@ -17,6 +17,9 @@
 
 # Description
 
+Pokemon searching can occur on the Home page, pokemon search history can be seen on the history page, and pokemon details
+can be seen by clicking on either of the pokemon cards (search result card vs history card)
+
 ### Home Page -> `/`
 The application is built to search on the home page `/`. The input box has a debouncer set to `1 second` to prevent
 the user from making too many queries per each keypress. It looks for individual Pokemon and renders a Pokemon card
@@ -48,6 +51,9 @@ search on the home page, and a second entry for when you click through to the de
 
 * The pokemon details pages only include `evolves_from` relationships, so you can visit previous evolutions from the details page
 but not the `evolvess_to` relationship
+
+* Also noticed some deprecation warnings, ideally I would go and fix these warnings to ensure the projcect is in the best shape possible, but I was running out of time
+  So instead I'm leaving this note here stating that I would infact like to fix those warnings
 
 * Thoughts on making this work on concurrent envs: To make this work in a concurrent environment we would have to store the data in a DB rather than in localStorage to better operate on the data,
 and also have to ensure locking mechanisms to prevent race conditions while writing into the DB.
