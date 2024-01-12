@@ -4,7 +4,7 @@ export default function Loading({ children, visible = false }: { children?: Reac
   return (
     <LoadingWrapper $visible={visible}>
       {children}
-      <Spinner />
+      <Spinner aria-label="Loading Spinner" />
     </LoadingWrapper>
   );
 }

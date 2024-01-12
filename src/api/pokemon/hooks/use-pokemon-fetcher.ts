@@ -6,9 +6,9 @@ import { HistoryEntry } from "../../../redux/history/history-slice/schema";
 import { useDispatch } from 'react-redux';
 import { addSearch } from '../../../redux/history/history-slice';
 
-interface UsePokemonFetch { queryStr?: string | number }
+interface UsePokemonFetcher { queryStr?: string | number }
 
-export default function usePokemonFetch({ queryStr }: UsePokemonFetch) {
+export default function usePokemonFetcher({ queryStr }: UsePokemonFetcher) {
   const dispatch = useDispatch();
 
   // data normlization

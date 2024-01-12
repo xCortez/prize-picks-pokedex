@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import usePokemonFetch from '../../api/pokemon/hooks/use-pokemon-fetcher';
+import usePokemonFetcher from '../../api/pokemon/hooks/use-pokemon-fetcher';
 import PokemonCard from '../../components/surfaces/card/pokemon-card';
 import Loading from '../../components/feedback/loading';
 import { PageWrapper, BackgroundImg, SpeciesData } from './index.css';
@@ -8,7 +8,7 @@ import titlizeString from '../../utils/titleize-string';
 
 export default function Pokemon() {
   const { id = '' } = useParams();
-  const { data, isLoading, error } = usePokemonFetch({ queryStr: id });
+  const { data, isLoading, error } = usePokemonFetcher({ queryStr: id });
   const { data: speciesData } = useSpeciesFetcher({ queryStr: id });
   const speciesEvolvesFromUrlParts = speciesData ? speciesData.evolves_from_species?.url.split('/') : [];
 

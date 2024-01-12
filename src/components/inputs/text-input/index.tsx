@@ -25,7 +25,10 @@ function TextInput({ children, onInputChange }: TextInputInterface) {
   }, [value, onInputChange])
 
   return (
-    <InputWrapper><Input onChange={onChange}/>{children}</InputWrapper>
+    <InputWrapper>
+      <Input onChange={onChange} />
+      {children}
+    </InputWrapper>
   );
 }
 
