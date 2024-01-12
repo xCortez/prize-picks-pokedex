@@ -46,6 +46,9 @@ search on the home page, and a second entry for when you click through to the de
 ## Notes
 * Currently this is using localStorage to store history instead of a DB, I would have loved to hooked it up to a DB to keep track of user history.
 
+* The pokemon details pages only include `evolves_from` relationships, so you can visit previous evolutions from the details page
+but not the `evolvess_to` relationship
+
 * Thoughts on making this work on concurrent envs: To make this work in a concurrent environment we would have to store the data in a DB rather than in localStorage to better operate on the data,
 and also have to ensure locking mechanisms to prevent race conditions while writing into the DB.
 With the consideration of locking mechanisms we should also consider concurrency models that represent

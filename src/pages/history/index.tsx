@@ -15,7 +15,7 @@ export default function History() {
     <CenteredPage>
       <ColumnFlow>
         <Button onClick={() => dispatch(clearHistory())}>Clear History</Button>
-        {searches.map((history) => <PokemonCardHistory {...history} key={`${history.id}-${history.dateSearched}`}/>)}
+        {searches.map((history, i) => <PokemonCardHistory {...history} key={`${i}-${history.dateSearched}`}/>)}
 
         {searches.length === 0 && <>No Pokemon searches found!</>}
       </ColumnFlow>
