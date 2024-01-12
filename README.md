@@ -38,6 +38,11 @@ There is als a clear button in case you'd like to clear the history that has bee
 There is also the pokemon details page that displays content specific to the Pokemon that was selected on it's own page.
 you can visit the previous evolutions of the pokemon from this page as it includes a bit more information about the species
 
+#### Important
+This page used the same search mechanism as the `/` (Home) page and thus anytime you go to a details page, it will include it
+in your history as a searched pokemon. This may make it look like duplicate entries on the history page `/history`, but in reality it would be 1 entry for the initial
+search on the home page, and a second entry for when you click through to the details page and it searches again.
+
 ## Notes
 * Currently this is using localStorage to store history instead of a DB, I would have loved to hooked it up to a DB to keep track of user history.
 
