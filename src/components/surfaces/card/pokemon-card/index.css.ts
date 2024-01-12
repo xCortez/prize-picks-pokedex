@@ -6,6 +6,11 @@ const AvatarAndContent = styled.div`
   display: flex;
 `;
 
+const CardWrapper = styled.div`
+  max-width: 300px;
+  padding: 0 2rem;
+`
+
 const ContentColumn = styled.span`
   align-self: flex-start;
   display:flex;
@@ -13,6 +18,15 @@ const ContentColumn = styled.span`
   margin: 1rem;
 `;
 
+const Footer = styled.div`
+  display:flex;
+  flex-flow: column;
+`;
+
+const Identifier = styled.p`
+  font-size: .80rem;
+  margin: 0.25rem;
+`
 const Stat = styled.span`
   display: contents;
 `;
@@ -27,20 +41,6 @@ const Stats = styled.span`
   padding: 1rem;
 `;
 
-const Footer = styled.div`
-  display:flex;
-  flex-flow: column;
-`;
-
-const CardWrapper = styled.div`
-  max-width: 300px;
-  padding: 0 2rem;
-`
-
-const Identifier = styled.p`
-  font-size: .80rem;
-  margin: 0.25rem;
-`
 
 export {
   AvatarAndContent,

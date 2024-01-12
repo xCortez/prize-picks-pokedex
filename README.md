@@ -5,6 +5,7 @@
 * [Typescript](https://www.typescriptlang.org/)
 * [Styled-components](https://github.com/styled-components/styled-components)
 * [Axios](https://github.com/axios/axios)
+* [Redux-Toolkit](https://redux-toolkit.js.org)
 
 # Setup
 
@@ -20,3 +21,6 @@ the user from making too many queries per each keypress. It looks for individual
 in the case that a correct Pokemon name is provided `(example: squirtle, charmander, dragonite)`
 
 The Pokemon Cards display some extra metadata of the Pokemon alongside a sprite to ID them.
+
+We use Redux-toolkit to make use of redux to keep track of the users Pokemon search histories
+but without all the crazy configuration that redux takes.
