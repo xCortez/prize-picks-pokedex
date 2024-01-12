@@ -15,6 +15,9 @@
 3. Spin up the app `npm start`
 4. visit `http://localhost:3000`
 
+# Brief video overview
+https://github.com/xCortez/prize-picks-pokedex/assets/5080163/c3347418-7acf-4bb2-9662-e92d91c827ce
+
 # Description
 
 Pokemon searching can occur on the Home page, pokemon search history can be seen on the history page, and pokemon details
